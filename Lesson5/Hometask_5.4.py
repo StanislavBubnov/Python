@@ -14,11 +14,11 @@ with open('test_for_hometask_5.4(1).txt','r') as my_text:
         a = i.strip().split(' ')
         if a[0] == 'One':
             a[0] = 'Один'
-        if a[0] == 'Two':
+        elif a[0] == 'Two':
             a[0] = 'Два'
-        if a[0] == 'Three':
+        elif a[0] == 'Three':
             a[0] = 'Три'
-        if a[0] == 'Four':
+        elif a[0] == 'Four':
             a[0] = 'Четыре'
         my_list_2.append(a)
 

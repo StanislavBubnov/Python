@@ -25,7 +25,7 @@ with open('test_for_hometask_5.7.txt', 'r') as my_text:
         if profit > 0:
             average_list.append(profit)
         my_dict.update({a[0]:profit})
-    my_dict_ave.update({'average_profit':sum(average_list)})
+    my_dict_ave.update({'average_profit':sum(average_list)/len(average_list)})
 
 with open("test_for_hometask_5.7.json", "w") as write_f:
     json.dump([my_dict,my_dict_ave], write_f)
